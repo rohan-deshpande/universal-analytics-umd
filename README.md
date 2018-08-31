@@ -34,14 +34,17 @@ This module allows tracking data (or rather, users) from within a Node.js applic
 `universal-analytics` is installed and included like any other node module:
 
 ```
-$ npm install universal-analytics
+$ npm install universal-analytics-umd
 ```
 
 ```javascript
-var ua = require('universal-analytics');
+var ua = require('universal-analytics-umd');
 
 // Or with ES6 import
-import ua from 'universal-analytics'
+import ua from 'universal-analytics-umd'
+
+// Or with a script tag
+<script src='./path/to/ua.js'></script>
 ```
 
 Initialization expects at least your Google Analytics account ID:
@@ -620,26 +623,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

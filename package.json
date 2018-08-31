@@ -1,14 +1,15 @@
 {
-  "name": "universal-analytics",
+  "name": "universal-analytics-umd",
   "version": "0.4.17",
-  "description": "A node module for Google's Universal Analytics tracking",
+  "description": "A umd module for Google's Universal Analytics tracking",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "build": "webpack --env build"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:peaksandpies/universal-analytics.git"
+    "url": "git@github.com:rohan-deshpande/universal-analytics-umd.git"
   },
   "keywords": [
     "google",
@@ -22,9 +23,21 @@
     "uuid": "^3.0.0"
   },
   "devDependencies": {
+    "mocha": "*",
     "should": "*",
     "sinon": "^1.17.7",
-    "mocha": "*"
+    "webpack": "^2.3.3",
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.8.0"
   },
   "author": "Jörg Tillmann <joerg@peaksandpies.com>",
   "license": "MIT"
